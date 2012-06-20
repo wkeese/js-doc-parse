@@ -22,12 +22,16 @@ define({
 
 	// The exporter(s) to use. The following exporters are provided by default:
 	//    - dojov1: An exporter for the v1 Dojo API browser.
+	//    - tree: exports JSON data showing modules in a tree
 	// Additional custom exporters can be used by passing the module ID of a custom exporter module.
 	// It is also possible to pass additional configuration options to each exporter by passing an object instead
 	// of a string, with the following properties:
 	//    - id: The module ID of the exporter.
 	//    - config: Arbitrary exporter configuration object, passed as an argument to the exporter function.
-	exporters: [ { id: 'dojov1', config: { file: 'details.xml' } } ],
+	exporters: [
+		{ id: 'dojov1', config: { file: 'details.xml' } },
+		{ id: 'tree', config: { file: 'tree.json' } }
+	],
 
 	// Options for console output during the processing of documentation.
 	show: {
