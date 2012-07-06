@@ -43,5 +43,17 @@ define([ 'dojo/_base/declare', 'dojo/Stateful' ], function (declare, Stateful) {
 		//		A static function.
 	};
 
+	External.Class1 = declare(null, {
+		// summary:
+		//		Description of class
+
+		c1f1: function(a){
+			// summary:
+			//		Function in class
+			// a: Number
+			//		arg
+		}
+	});
+
 	return External;
 });
