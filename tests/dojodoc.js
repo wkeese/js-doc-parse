@@ -4,6 +4,18 @@ define([ 'dojo/_base/declare', 'dojo/Stateful' ], function (declare, Stateful) {
 		//		A sample constructor that is not publicly exposed.
 		//	description:
 		//		This also features a _description_, which is made out of *Markdown*.
+		//
+		//		- first list item
+		//		- second list item
+		//			- nested list item one
+		//			- nested list item two
+		//		- third list item
+		//
+		//		Code example:
+		// |	var foo = 3;
+		// |	var bar = 5;
+		//
+		//		And another paragraph.
 		//	foo: foo-type?
 		//		A property that only exists in your mind.
 	});
@@ -11,6 +23,12 @@ define([ 'dojo/_base/declare', 'dojo/Stateful' ], function (declare, Stateful) {
 	var External = declare(Internal, {
 		//	summary:
 		//		A sample declare module.
+		//
+		//		- hello
+		//		- world
+		//			- world 1
+		//			- world 2
+		//		- goodbye
 
 		//	obj: Object?
 		//		An optional object with an explicit type.
@@ -41,6 +59,8 @@ define([ 'dojo/_base/declare', 'dojo/Stateful' ], function (declare, Stateful) {
 	External.fn2 = function () {
 		//	summary:
 		//		A static function.
+		//	returns: another-return-type
+		//		This one has the return type specified in the comment
 	};
 
 	return External;
