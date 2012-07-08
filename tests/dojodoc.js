@@ -11,10 +11,6 @@ define([ 'dojo/_base/declare', 'dojo/Stateful' ], function (declare, Stateful) {
 		//			- nested list item two
 		//		- third list item
 		//
-		//		Code example:
-		// |	var foo = 3;
-		// |	var bar = 5;
-		//
 		//		And another paragraph.
 		//	foo: foo-type?
 		//		A property that only exists in your mind.
@@ -29,6 +25,12 @@ define([ 'dojo/_base/declare', 'dojo/Stateful' ], function (declare, Stateful) {
 		//			- world 1
 		//			- world 2
 		//		- goodbye
+		//
+		//		Code example:
+		// |	if(true){
+		// |		(only) this line should be indented
+		// |	}
+		//		And another paragraph.
 
 		//	obj: Object?
 		//		An optional object with an explicit type.
@@ -53,6 +55,21 @@ define([ 'dojo/_base/declare', 'dojo/Stateful' ], function (declare, Stateful) {
 
 			return a + // return-type
 				b;
+		},
+
+		addClassFx: function(cssClass, args){
+			// summary:
+			//		Animate the effects of adding a class to all nodes in this list.
+			//		see `dojox.fx.addClass`
+			// tags:
+			//		FX, NodeList
+			// example:
+			//	|	// fade all elements with class "bar" to to 50% opacity
+			//	|	dojo.query(".bar").addClassFx("bar").play();
+
+			return coreFx.combine(this.map(function(n){ // dojo.Animation
+				return styleX.addClass(n, cssClass, args);
+			}));
 		}
 	});
 
