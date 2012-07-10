@@ -52,6 +52,14 @@ define([ 'dojo/_base/declare', 'dojo/Stateful' ], function (declare, Stateful) {
 			//		Optional string type in parameters.
 			//	c: c-type
 			//		Boolean type in comment.
+			//	returns: Boolean
+			//		Markdown return description
+			//
+			//		1. one
+			//		2. two
+			//		3. three
+			//
+			//		End of description
 
 			return a + // return-type
 				b;
