@@ -1,2 +1,2 @@
 #!/bin/bash
-node dojo/dojo.js load=parse $@
+node parse.js $@

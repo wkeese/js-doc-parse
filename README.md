@@ -4,8 +4,8 @@ js-doc-parse
 A library for parsing JavaScript files and extracting inline documentation. Designed primarily for use with the Dojo
 Toolkit, but extensible enough to work with any application or documentation format.
 
-New BSD License © 2011–2012 Colin Snover <http://zetafleet.com>. Released under
-[Dojo Foundation CLA](http://dojofoundation.org/about/cla).
+New BSD License © 2011–2013 Colin Snover <http://zetafleet.com>, SitePen Inc. <http://www.sitepen.com>, and
+other contributors. Released under [Dojo Foundation CLA](http://dojofoundation.org/about/cla).
 
 Why is this library special?
 ----------------------------
@@ -53,16 +53,16 @@ areas of operation:
 Dependencies
 ------------
 
-[dojo](https://github.com/dojo/dojo) – AMD loader & helper library  
-[esprima](https://github.com/ariya/esprima) – ECMAScript parser  
+[dojo](https://github.com/dojo/dojo) – AMD loader & helper library
+[esprima](https://github.com/ariya/esprima) – ECMAScript parser
 [marked](https://github.com/chjj/marked) – Markdown parser
 
 Instructions
 ------------
 
 1. `git clone --recursive https://github.com/csnover/js-doc-parse.git`
-2. Edit `config.js` as appropriate for your environment. For parsing Dojo Toolkit source, you should only need to set
-   `environmentConfig.basePath` to the path to your Dojo 1.8 checkout.
-3. Run `./parse.sh file-or-directory [file-or-directory…]` to generate documentation for the files/directories you’ve
-   specified. By default, this documentation will be exported to `details.xml`; update the exporter configuration if
+2. Copy and edit `config.js` as appropriate for your environment. For parsing Dojo Toolkit source, you should only need
+   to set `basePath` to the path to your Dojo 1.8 checkout.
+3. Run `./parse.sh config=path/to/your/config.js` to generate documentation for the packages you’ve specified. In
+   your config. By default, this documentation will be exported to `details.xml`; update the exporter configuration if
    you want it to go elsewhere.

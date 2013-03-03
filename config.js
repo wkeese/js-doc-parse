@@ -29,29 +29,36 @@ define({
 	//    - config: Arbitrary exporter configuration object, passed as an argument to the exporter function.
 	exporters: [ { id: 'dojov1', config: { file: 'details.xml' } } ],
 
+	// Options for console output during the processing of documentation.
 	show: {
+		// Show warnings.
 		warn:   false,
+		// Show informational messages.
 		info:   false,
+		// Show debugging messages.
 		debug:  false,
+		// Show current and peak memory usage during processing.
 		memory: true
 	},
 
-	// Configuration data for module ID resolution and path remapping within the parser.
-	// TODO: Document
-	environmentConfig: {
-		basePath: '',
-		packages: {
-			dojo: 'dojo',
-			dijit: 'dijit',
-			dojox: 'dojox',
-			doh: 'util/doh'
-		},
-		excludePaths: [
-			// Non-API code
-			/\/(?:tests|nls|demos)\//,
+	// The base path for all the packages being processed.
+	basePath: '../dojo-trunk/183',
 
-			// Overwrites dojo.declare
-			/dojox\/lang\/(?:docs|typed)/
-		]
-	}
+	// The packages to be processed by the parser. The key is the name of the package, and the value is the
+	// location of the package relative to basePath.
+	packages: {
+		dojo: 'dojo',
+		dijit: 'dijit',
+		dojox: 'dojox',
+		doh: 'util/doh'
+	},
+
+	// An array of regular expressions that match file paths that should be skipped.
+	excludePaths: [
+		// Non-API code
+		/\/(?:tests|nls|demos)\//,
+
+		// Overwrites dojo.declare
+		/dojox\/lang\/(?:docs|typed)/
+	]
 });
