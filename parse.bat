@@ -1,1 +1,1 @@
-node dojo/dojo.js load=parse %1
+node parse.js %1

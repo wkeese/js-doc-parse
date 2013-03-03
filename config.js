@@ -42,7 +42,7 @@ define({
 	},
 
 	// The base path for all the packages being processed.
-	basePath: '../dojo-trunk/183',
+	basePath: '../dojo-trunk',
 
 	// The packages to be processed by the parser. The key is the name of the package, and the value is the
 	// location of the package relative to basePath.
@@ -53,7 +53,8 @@ define({
 		doh: 'util/doh'
 	},
 
-	// An array of regular expressions that match file paths that should be skipped.
+	// An array of regular expressions that match file paths that should be skipped. Note that since these are file
+	// paths, not module IDs, if you are using Windows, you need to use backslashes!
 	excludePaths: [
 		// Non-API code
 		/\/(?:tests|nls|demos)\//,
