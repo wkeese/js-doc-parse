@@ -40,10 +40,6 @@ else {
 			})();
 
 			packagePaths.forEach(function processPath(parent, path) {
-				if (typeof path === 'number') {
-					throw new Error('Bind!');
-				}
-
 				path = pathUtil.join(parent, path);
 				var stats;
 
