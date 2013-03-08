@@ -59,6 +59,9 @@ define({
 		// Non-API code
 		/\/(?:tests|nls|demos)\//,
 
+		// used for builds, not part of source
+		/dojox\/app\/build/,
+
 		// Overwrites dojo.declare
 		/dojox\/lang\/(?:docs|typed)/
 	]
