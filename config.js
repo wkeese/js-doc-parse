@@ -28,7 +28,7 @@ define({
 	//    - id: The module ID of the exporter.
 	//    - config: Arbitrary exporter configuration object, passed as an argument to the exporter function.
 	exporters: [
-		{ id: 'dojov1', config: { details: 'details.xml', tree: 'tree.json' } }
+		{ id: 'dojov1', config: { details: 'details.xml', tree: 'tree.json', htmlTree: 'tree.html' } }
 	],
 
 	// Options for console output during the processing of documentation.
