@@ -44,7 +44,7 @@ define({
 	},
 
 	// The base path for all the packages being processed.
-	basePath: '../dojo-trunk',
+	basePath: '../trunk',
 
 	// The packages to be processed by the parser. The key is the name of the package, and the value is the
 	// location of the package relative to basePath.
