@@ -22,13 +22,15 @@ define({
 
 	// The exporter(s) to use. The following exporters are provided by default:
 	//    - dojov1: An exporter for the v1 Dojo API browser.
+	//    - dapi: An exporter for https://github.com/lbod/dapi, a javascript port of the Dojo PHP API browser
+	//    - tree: export tree data for modules exported by dojov1 or dapi
 	// Additional custom exporters can be used by passing the module ID of a custom exporter module.
 	// It is also possible to pass additional configuration options to each exporter by passing an object instead
 	// of a string, with the following properties:
 	//    - id: The module ID of the exporter.
 	//    - config: Arbitrary exporter configuration object, passed as an argument to the exporter function.
 	exporters: [
-		{ id: 'details', config: { details: 'details.json' } },
+		{ id: 'dapi', config: { details: 'details.json' } },
 		{ id: 'tree', config: { tree: 'tree.json', htmlTree: 'tree.html' } }
 	],
 
