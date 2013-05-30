@@ -68,6 +68,9 @@ define({
 		/dojox\/app\/build/,
 
 		// Overwrites dojo.declare
-		/dojox\/lang\/(?:docs|typed)/
+		/dojox\/lang\/(?:docs|typed)/,
+
+		// Not AMD
+		/dojox\/data\/ItemExplorer/
 	]
 });
