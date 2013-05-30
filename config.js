@@ -31,7 +31,7 @@ define({
 	//    - config: Arbitrary exporter configuration object, passed as an argument to the exporter function.
 	exporters: [
 		{ id: 'dapi', config: { details: 'details.json' } },
-		{ id: 'tree', config: { tree: 'tree.json', htmlTree: 'tree.html' } }
+		{ id: 'tree', config: { tree: 'tree.json' } }
 	],
 
 	// Options for console output during the processing of documentation.
