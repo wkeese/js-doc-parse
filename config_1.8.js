@@ -87,6 +87,11 @@ define({
 		/dojox\/layout\/ext-dijit\/layout\/StackContainer/,
 		/dojox\/mobile\/app/,
 		/dojox\/storage/,
+
+		// not AMD in 1.8
+		/dojox\/editor\/plugins\/ResizeTableColumn/,
+		/dojox\/editor\/plugins\/SpellCheck/,
+
 		/dojox\/widget\/gauge/,
 		/dojox\/widget\/AnalogGauge/,
 		/dojox\/widget\/BarGauge/,
