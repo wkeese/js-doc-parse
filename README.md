@@ -14,7 +14,7 @@ Why is this library special?
    needs to be abstracted for it to work on Rhino and in the browser, too, and I plan on doing just that.)
 2. It isn’t lazy! js-doc-parse completely parses the actual JavaScript source code to extract API details instead of
    just running some crappy regular expressions over the source text to pluck out comment blocks.
-3. [Highly extensible](https://github.com/csnover/js-doc-parse/blob/master/config.js), with initially planned support
+3. [Highly extensible](https://github.com/wkeese/js-doc-parse/blob/master/config.js), with initially planned support
    for two code commenting styles (dojodoc and jsdoc).
 
 Wait, _highly_ extensible? Tell me more!
@@ -60,9 +60,10 @@ Dependencies
 Instructions
 ------------
 
-1. `git clone --recursive https://github.com/csnover/js-doc-parse.git`
+1. `git clone --recursive https://github.com/wkeese/js-doc-parse.git`
 2. Copy and edit `config.js` as appropriate for your environment. For parsing Dojo Toolkit source, you should only need
    to set `basePath` to the path to your Dojo 1.8 checkout.
 3. Run `./parse.sh config=path/to/your/config.js` to generate documentation for the packages you’ve specified. In
    your config. By default, this documentation will be exported to `details.xml`; update the exporter configuration if
    you want it to go elsewhere.
+4. See https://github.com/lbod/dapi/wiki for instructions on viewing the output
