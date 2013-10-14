@@ -40,7 +40,7 @@ else {
 			})();
 
 			packagePaths.forEach(function processPath(parent, path) {
-				path = pathUtil.join(parent, path);
+				path = pathUtil.join(parent, path).replace(/\\/g, '/'); //windows fix
 				var stats;
 
 				try {
