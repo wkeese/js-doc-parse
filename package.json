@@ -1,0 +1,17 @@
+{
+  "name": "js-doc-parse",
+  "version": "1.0.0",
+  "description": "A library for parsing JavaScript files and extracting inline documentation. Designed primarily for use with the Dojo Toolkit, but extensible enough to work with any application or documentation format.",
+  "keywords": [
+    "JavaScript",
+    "Dojo",
+    "documentation",
+    "parser"
+  ],
+  "homepage": "http://dojotoolkit.org/",
+  "dependencies": {
+    "dojo"    : "1.9.2",
+    "esprima" : "1.0.4",
+    "marked"  : "0.2.5"
+  }
+}
