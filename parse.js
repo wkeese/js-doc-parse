@@ -3,15 +3,16 @@ if (typeof process !== 'undefined' && typeof define === 'undefined') {
 	(function () {
 		var pathUtil = require('path');
 		global.dojoConfig = {
+            basePath: __dirname,
 			async: true,
 			deps: [ 'js-doc-parse/parse' ],
 			packages: [
-				{ name: 'dojo', location: pathUtil.join(__dirname, 'dojo') },
+				{ name: 'dojo', location: pathUtil.dirname(require.resolve('dojo')) },
 				{ name: 'js-doc-parse', location: __dirname }
 			]
 		};
 
-		require('./dojo/dojo.js');
+		require('dojo/dojo.js');
 	})();
 }
 else {
@@ -19,9 +20,9 @@ else {
 		'./lib/env',
 		'./lib/File',
 		'./lib/Module',
-		'./lib/node!fs',
-		'./lib/node!util',
-		'./lib/node!path',
+		'dojo/node!fs',
+		'dojo/node!util',
+		'dojo/node!path',
 		'./lib/console',
 		'./lib/esprimaParser'
 	], function (env, File, Module, fs, util, pathUtil, console) {
