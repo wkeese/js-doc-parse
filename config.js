@@ -86,6 +86,7 @@ define({
 		/dojox\/lang\/functional\/util/,
 		/dojox\/layout\/ext-dijit\/layout\/StackContainer/,
 		/dojox\/mobile\/app/,
+		/dojox\/mobile\/migrationAssist/,
 		/dojox\/storage/,
 		/dojox\/widget\/gauge/,
 		/dojox\/widget\/AnalogGauge/,
@@ -100,6 +101,6 @@ define({
 		/dojox\/widget\/Loader/,
 		/dojox\/widget\/SortList/,
 		/dojox\/wire/,
-		/dojox\/xmpp/,
+		/dojox\/xmpp/
 	]
 });
