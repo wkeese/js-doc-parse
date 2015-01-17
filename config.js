@@ -62,7 +62,7 @@ define({
 	// paths, not module IDs, if you are using Windows, you need to use backslashes!
 	excludePaths: [
 		// Non-API code
-		/\/(?:tests|nls|demos)\//,
+		/\/(?:tests|testsDOH|nls|demos|node_modules)\//,
 
 		// used for builds, not part of source
 		/dojox\/app\/build/,
